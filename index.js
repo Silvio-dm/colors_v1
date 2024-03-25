@@ -14,6 +14,7 @@ const violet = document.querySelector(".violet");
 const grey = document.querySelector(".grey");
 const yellow = document.querySelector(".yellow");
 const pink = document.querySelector(".pink");
+const body = document.querySelector("body");
 
 
 
@@ -39,11 +40,13 @@ function handleClick(){
     const randomColor2 = "#" + Math.floor(Math.random() * 16777215).toString(16);
     const randomColor3 = "#" + Math.floor(Math.random() * 16777215).toString(16);
     const randomColor4 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    const randomColor5 = "#" + Math.floor(Math.random() * 16777215).toString(16);
 
     violets.forEach((e)=> e.style.setProperty("background-color", randomColor));
     greys.forEach((e)=> e.style.setProperty("background-color", randomColor2));
     yellows.forEach((e)=> e.style.setProperty("background-color", randomColor3));
     pinks.forEach((e)=> e.style.setProperty("background-color", randomColor4));
+    body.style.setProperty("background-color", randomColor5);
 
     if(counter%2===0){
     violets.forEach((e)=> e.style.setProperty("animation", "mymove 5s"));   
